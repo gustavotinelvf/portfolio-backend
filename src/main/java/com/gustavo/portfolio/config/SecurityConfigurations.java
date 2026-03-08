@@ -32,7 +32,11 @@ public class SecurityConfigurations {
             // Isso evita conflito de ordem de filtros que causava o bloqueio do OPTIONS/PUT
             .cors(cors -> cors.configurationSource(request -> {
                 CorsConfiguration config = new CorsConfiguration();
-                config.setAllowedOrigins(Arrays.asList("http://localhost:5173")); // Porta padrão do Vite/React
+                config.setAllowedOrigins(Arrays.asList(
+                    "http://localhost:5173",
+                    "https://portfolio-frontend-ten-neon.vercel.app",
+                    "https://portfolio-gustavo-tinel-gustavotinelvfs-projects.vercel.app/"
+                ));
                 config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                 config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept", "X-Requested-With", "Origin"));
                 config.setAllowCredentials(true);
