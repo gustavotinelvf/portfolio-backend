@@ -35,7 +35,8 @@ public class SecurityConfigurations {
                 config.setAllowedOrigins(Arrays.asList(
                     "http://localhost:5173",
                     "https://portfolio-frontend-ten-neon.vercel.app",
-                    "https://portfolio-gustavo-tinel-gustavotinelvfs-projects.vercel.app/"
+                    "https://portfolio-gustavo-tinel-gustavotinelvfs-projects.vercel.app",
+                    "https://portfolio-gustavo-tinel.vercel.app"
                 ));
                 config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                 config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept", "X-Requested-With", "Origin"));
